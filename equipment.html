@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Медицински транспорт</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color:#E5E4E2;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index:1;
+}
+.content{
+  width: 75%;
+  position: relative;
+  top: 3em;
+
+}
+.content img{
+  float: left;
+  margin-right: 2em;
+
+}
+.content h1{
+ color: #0047AB;
+
+}
+.content p{
+  line-height: 2em;
+  font-size: 1.5em;
+}
+hr{
+  
+  color: #B6D0E2;
+}
+.topnav a {
+  float: right;
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav div {
+  float: left;
+  display: block;
+  color: #0047AB;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #B6D0E2;
+  color: #0047AB;
+}
+#equipment{
+  background-color: #B6D0E2;
+  color: #0047AB;
+}
+#footer {
+    position: relative;
+    top: 20em;
+    background-color: #B6D0E2;
+  color: #0047AB;
+  text-align: center;
+  }
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none; top: 10px;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <div>Медицински транспорт</div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  <a href="contacts.html">Контакти</a>
+  <a href="equipment.html" id="equipment">Оборудване</a>
+  <a href="services.html" >Услуги</a>
+  <a href="team.html">Нашият екип</a>
+  <a href="index.html">Начало</a>
+  
+  
+  
+  
+  
+</div>
+
+
+<center>
+  <div class="content">
+  <h1>Оборудване</h1>
+  <hr>
+  <img src="photos/equipment.jpg">
+  <p>Нашите линейки са оборудвани с най-модерна техника, по еврпоейски стандарт. Разполагаме с Монитор дефибрилатор, ЕКГ, Аспиратор и всичко нужно, за превоз на пациенти.
+ </p>
+
+</div>
+
+</center>
+<footer id="footer">
+   <span style="position: relative; left: -18%">Контакти:</span>
+  <p  style="position: relative; left: -18%"><a href="mailto:private_ambulancems@abv.bg">private_ambulancems@abv.bg</a></p>
+  <a href="tel:+359877933931"><p ><i class="fa fa-phone" style="font-size:36px; color: #0047AB; margin-right: 0.5em;"></i>0877933931</p></a>
+</footer> 
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>
